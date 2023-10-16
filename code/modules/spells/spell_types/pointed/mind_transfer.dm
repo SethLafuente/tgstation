@@ -24,12 +24,11 @@
 	/// Primarily for debugging - targets hit with this set to FALSE will init a mind, then do the swap.
 	var/target_requires_mind = TRUE
 	/// For how long is the caster stunned for after the spell
-	var/unconscious_amount_caster = 40 SECONDS
+	var/unconscious_amount_caster = 35 SECONDS
 	/// For how long is the victim stunned for after the spell
 	var/unconscious_amount_victim = 40 SECONDS
 	/// List of mobs we cannot mindswap into.
 	var/static/list/mob/living/blacklisted_mobs = typecacheof(list(
-		/mob/living/basic/demon/slaughter,
 		/mob/living/brain,
 		/mob/living/silicon/pai,
 		/mob/living/simple_animal/hostile/megafauna,
